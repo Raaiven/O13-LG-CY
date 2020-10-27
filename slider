@@ -1,0 +1,702 @@
+<section class="s_features pb32 container" data-name="Title">
+                <div class="row s_nb_column_fixed justify-content-center">
+                    <div class="col-lg-3 pt-3 pb-3" style="font-size:24px;">Which Subscription?</div>
+                    <div class="col-lg-2" style="width: 13%;flex: 0 0 13%;max-width: 13%;">
+                        <button type="button" onclick="junior()" id="3b" class="btn-lg btn-block border border-light btn-junior-engineer font-weight-bolder" style="border-radius: 6px!important; font-size:20px; height:80%; min-width: 50px;">
+                            <p>3+</p>
+                            
+                        </button>
+                    </div>
+                    <div class="col-lg-2" style="width: 13%;flex: 0 0 13%;max-width: 13%;">
+                        <button type="button" onclick="young()" id="7b" class="btn-lg btn-block border border-light btn-young-engineer font-weight-bolder" style="border-radius: 6px!important; font-size:20px; height:80%; min-width: 50px;">
+                            <p>7+</p>
+                        </button>
+                    </div>
+                    <div class="col-lg-2" style="width: 13%;flex: 0 0 13%;max-width: 13%;">
+                        <button type="button" onclick="master()" id="10b" class="btn-lg btn-block border border-light btn-master-engineer font-weight-bolder" style="border-radius: 6px!important; font-size:20px; height:80%; min-width: 50px;">
+                            <p>10+</p>
+                        </button>
+                    </div>
+                    <div class="col-lg-2" style="width: 13%;flex: 0 0 13%;max-width: 13%;">
+                        <button type="button" onclick="pro()" id="14b" class="btn-lg btn-block border border-light btn-pro-engineer font-weight-bolder" style="border-radius: 6px!important; font-size:20px; height:80%; min-width: 50px;">
+                            <p>14+</p>
+                        </button>
+                    </div>
+                    <div class="col-lg-2" style="width: 13%;flex: 0 0 13%;max-width: 13%;">
+                        <button type="button" onclick="ALLb()" id="ALLb" class="btn-lg btn-block border border-light bg-primary font-weight-bolder" style="border-radius: 6px!important; font-size:20px; height:80%; min-width: 50px;">
+                            <p>ALL</p>
+                        </button>
+                    </div>
+                </div>
+            <!--_____________________________________________middle carousel_3b____________________________________________________-->
+    <div style="display:block;" id="div1">
+    <div class="swiper-container container swiper1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+    <div class="container" id="3b_div1" style="display:block;"><script>$('#3b_div1').load('https://lgs-odoo13-enter-dev.cy.net/shop/compare/?products=1,6,17,18 #containerimport');</script></div>
+    <div class="container" id="3b_div2" style="display:none;"><script>$('#3b_div2').load('https://lgs-odoo13-enter-dev.cy.net/shop/compare/?products=1,6,17 #containerimport');</script></div>
+    <div class="container" id="3b_div3" style="display:none;"><script>$('#3b_div3').load('https://lgs-odoo13-enter-dev.cy.net/shop/compare/?products=1,6 #containerimport');</script></div>
+    <div class="container" id="3b_div4" style="display:none;"><script>$('#3b_div4').load('https://lgs-odoo13-enter-dev.cy.net/shop/compare/?products=1,6,17,18 #containerimport');</script></div>
+    <div class="container" id="3b_div5" style="display:none;"><script>$('#3b_div5').load('https://lgs-odoo13-enter-dev.cy.net/shop/product/testvat-21#attr= #product_detail');</script></div>
+        <script>
+    var swiper1 = new Swiper('.swiper1', {
+      watchSlidesVisibility: true,
+      slidesPerView: 3,
+      observer: true,
+      observeParents: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+       breakpoints: {
+    1: {
+      slidesPerView: 1,
+    },
+    680: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
+    
+    });
+    
+        
+
+    var d1j = document.getElementById("3b_div1");
+    var d2j = document.getElementById("3b_div2");
+    var d3j = document.getElementById("3b_div3");
+    var d4j = document.getElementById("3b_div4");
+    var d5j = document.getElementById("3b_div5");  
+    swiper1.on('transitionEnd ', function () {
+        console.log('*** swiper1.realIndex', swiper1.realIndex);
+        if (swiper1.realIndex == 0) {
+          if (d1j.style.display === "none") {
+            d1j.style.display = "block";
+            d2j.style.display = "none";
+            d3j.style.display = "none";
+            d4j.style.display = "none";
+            d5j.style.display = "none";
+          }
+        
+        }
+        if (swiper1.realIndex == 1) {
+          if (d2j.style.display === "none") {
+            d1j.style.display = "none";
+            d2j.style.display = "block";
+            d3j.style.display = "none";
+            d4j.style.display = "none";
+            d5j.style.display = "none";
+          }
+        
+        }
+        if (swiper1.realIndex == 2) {
+          if (d3j.style.display === "none") {
+            d1j.style.display = "none";
+            d2j.style.display = "none";
+            d3j.style.display = "block";
+            d4j.style.display = "none";
+            d5j.style.display = "none";
+          }
+        
+        }
+        if (swiper1.realIndex == 3) {
+          if (d4j.style.display === "none") {
+            d1j.style.display = "none";
+            d2j.style.display = "none";
+            d3j.style.display = "none";
+            d4j.style.display = "block";
+            d5j.style.display = "none";
+          }
+        
+        }
+        if (swiper1.realIndex == 4) {
+          if (d5j.style.display === "none") {
+            d1j.style.display = "none";
+            d2j.style.display = "none";
+            d3j.style.display = "none";
+            d4j.style.display = "none";
+            d5j.style.display = "block";
+          }
+        
+        }        
+    });
+        </script>    
+    
+    </div>
+    <!--__________________________________________________________________________________________________________________-->
+    
+    <!--_____________________________________________middle carousel_7b____________________________________________________-->
+    <div style="display:none;" id="div2">
+    <div class="swiper-container container swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+    <div class="container" id="7b_div1" style="display:block;">1</div>
+    <div class="container" id="7b_div2" style="display:none;">2</div>
+    <div class="container" id="7b_div3" style="display:none;">3</div>
+    <div class="container" id="7b_div4" style="display:none;">4</div>
+    <div class="container" id="7b_div5" style="display:none;">5</div>
+        <script>
+    var swiper2 = new Swiper('.swiper2', {
+      slidesPerView: 3,
+      observer: true,
+      observeParents: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+       breakpoints: {
+    1: {
+      slidesPerView: 1,
+    },
+    680: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }      
+    
+    });
+    
+        
+
+    var d1y = document.getElementById("7b_div1");
+    var d2y = document.getElementById("7b_div2");
+    var d3y = document.getElementById("7b_div3");
+    var d4y = document.getElementById("7b_div4");
+    var d5y = document.getElementById("7b_div5");  
+    swiper2.on('transitionEnd ', function () {
+        console.log('*** swiper2.realIndex', swiper2.realIndex);
+        if (swiper2.realIndex == 0) {
+          if (d1y.style.display === "none") {
+            d1y.style.display = "block";
+            d2y.style.display = "none";
+            d3y.style.display = "none";
+            d4y.style.display = "none";
+            d5y.style.display = "none";
+          }
+        
+        }
+        if (swiper2.realIndex == 1) {
+          if (d2y.style.display === "none") {
+            d1y.style.display = "none";
+            d2y.style.display = "block";
+            d3y.style.display = "none";
+            d4y.style.display = "none";
+            d5y.style.display = "none";
+          }
+        
+        }
+        if (swiper2.realIndex == 2) {
+          if (d3y.style.display === "none") {
+            d1y.style.display = "none";
+            d2y.style.display = "none";
+            d3y.style.display = "block";
+            d4y.style.display = "none";
+            d5y.style.display = "none";
+          }
+        
+        }
+        if (swiper2.realIndex == 3) {
+          if (d4y.style.display === "none") {
+            d1y.style.display = "none";
+            d2y.style.display = "none";
+            d3y.style.display = "none";
+            d4y.style.display = "block";
+            d5y.style.display = "none";
+          }
+        
+        }
+        if (swiper2.realIndex == 4) {
+          if (d5y.style.display === "none") {
+            d1y.style.display = "none";
+            d2y.style.display = "none";
+            d3y.style.display = "none";
+            d4y.style.display = "none";
+            d5y.style.display = "block";
+          }
+        
+        }        
+    });
+        </script>    
+    
+    </div>
+    <!--__________________________________________________________________________________________________________________-->
+    <!--_____________________________________________middle carousel_10b____________________________________________________-->
+    <div style="display:none;" id="div3">
+    <div class="swiper-container container swiper3">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+    <div class="container" id="10b_div1" style="display:block;">1</div>
+    <div class="container" id="10b_div2" style="display:none;">2</div>
+    <div class="container" id="10b_div3" style="display:none;">3</div>
+    <div class="container" id="10b_div4" style="display:none;">4</div>
+    <div class="container" id="10b_div5" style="display:none;">5</div>
+        <script>
+    var swiper3 = new Swiper('.swiper3', {
+      slidesPerView: 3,
+      observer: true,
+      observeParents: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+       breakpoints: {
+    1: {
+      slidesPerView: 1,
+    },
+    680: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }      
+    
+    });
+    
+        
+
+    var d1m = document.getElementById("10b_div1");
+    var d2m = document.getElementById("10b_div2");
+    var d3m = document.getElementById("10b_div3");
+    var d4m = document.getElementById("10b_div4");
+    var d5m = document.getElementById("10b_div5");  
+    swiper3.on('transitionEnd ', function () {
+        console.log('*** swiper3.realIndex', swiper3.realIndex);
+        if (swiper3.realIndex == 0) {
+          if (d1m.style.display === "none") {
+            d1m.style.display = "block";
+            d2m.style.display = "none";
+            d3m.style.display = "none";
+            d4m.style.display = "none";
+            d5m.style.display = "none";
+          }
+        
+        }
+        if (swiper3.realIndex == 1) {
+          if (d2m.style.display === "none") {
+            d1m.style.display = "none";
+            d2m.style.display = "block";
+            d3m.style.display = "none";
+            d4m.style.display = "none";
+            d5m.style.display = "none";
+          }
+        
+        }
+        if (swiper3.realIndex == 2) {
+          if (d3m.style.display === "none") {
+            d1m.style.display = "none";
+            d2m.style.display = "none";
+            d3m.style.display = "block";
+            d4m.style.display = "none";
+            d5m.style.display = "none";
+          }
+        
+        }
+        if (swiper3.realIndex == 3) {
+          if (d4m.style.display === "none") {
+            d1m.style.display = "none";
+            d2m.style.display = "none";
+            d3m.style.display = "none";
+            d4m.style.display = "block";
+            d5m.style.display = "none";
+          }
+        
+        }
+        if (swiper3.realIndex == 4) {
+          if (d5m.style.display === "none") {
+            d1m.style.display = "none";
+            d2m.style.display = "none";
+            d3m.style.display = "none";
+            d4m.style.display = "none";
+            d5m.style.display = "block";
+          }
+        
+        }        
+    });
+        </script>    
+    
+    </div>
+    <!--__________________________________________________________________________________________________________________-->  
+    <!--_____________________________________________middle carousel_14b____________________________________________________-->
+    <div style="display:none;" id="div4">
+    <div class="swiper-container container swiper4">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+    <div class="container" id="14b_div1" style="display:block;">1</div>
+    <div class="container" id="14b_div2" style="display:none;">2</div>
+    <div class="container" id="14b_div3" style="display:none;">3</div>
+    <div class="container" id="14b_div4" style="display:none;">4</div>
+    <div class="container" id="14b_div5" style="display:none;">5</div>
+        <script>
+    var swiper4 = new Swiper('.swiper4', {
+      slidesPerView: 3,
+      observer: true,
+      observeParents: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+       breakpoints: {
+    1: {
+      slidesPerView: 1,
+    },
+    680: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }      
+    
+    });
+    
+        
+
+    var d1p = document.getElementById("14b_div1");
+    var d2p = document.getElementById("14b_div2");
+    var d3p = document.getElementById("14b_div3");
+    var d4p = document.getElementById("14b_div4");
+    var d5p = document.getElementById("14b_div5");  
+    swiper4.on('transitionEnd ', function () {
+        console.log('*** swiper4.realIndex', swiper4.realIndex);
+        if (swiper4.realIndex == 0) {
+          if (d1p.style.display === "none") {
+            d1p.style.display = "block";
+            d2p.style.display = "none";
+            d3p.style.display = "none";
+            d4p.style.display = "none";
+            d5p.style.display = "none";
+          }
+        
+        }
+        if (swiper4.realIndex == 1) {
+          if (d2p.style.display === "none") {
+            d1p.style.display = "none";
+            d2p.style.display = "block";
+            d3p.style.display = "none";
+            d4p.style.display = "none";
+            d5p.style.display = "none";
+          }
+        
+        }
+        if (swiper4.realIndex == 2) {
+          if (d3p.style.display === "none") {
+            d1p.style.display = "none";
+            d2p.style.display = "none";
+            d3p.style.display = "block";
+            d4p.style.display = "none";
+            d5p.style.display = "none";
+          }
+        
+        }
+        if (swiper4.realIndex == 3) {
+          if (d4p.style.display === "none") {
+            d1p.style.display = "none";
+            d2p.style.display = "none";
+            d3p.style.display = "none";
+            d4p.style.display = "block";
+            d5p.style.display = "none";
+          }
+        
+        }
+        if (swiper4.realIndex == 4) {
+          if (d5p.style.display === "none") {
+            d1p.style.display = "none";
+            d2p.style.display = "none";
+            d3p.style.display = "none";
+            d4p.style.display = "none";
+            d5p.style.display = "block";
+          }
+        
+        }        
+    });
+        </script>    
+    
+    </div>
+    <!--__________________________________________________________________________________________________________________-->
+    <!--_____________________________________________middle carousel_all____________________________________________________-->
+    <div style="display:none;" id="div5">
+    <div class="swiper-container container swiper5">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+            <div class="swiper-slide text-center"><img class="img img-fluid flex-fill h-75" src="http://placehold.it/350x300/cccccc/ffffff"/></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+    <div class="container" id="all_div1" style="display:block;">1</div>
+    <div class="container" id="all_div2" style="display:none;">2</div>
+    <div class="container" id="all_div3" style="display:none;">3</div>
+    <div class="container" id="all_div4" style="display:none;">4</div>
+    <div class="container" id="all_div5" style="display:none;">5</div>
+        <script>
+    var swiper5 = new Swiper('.swiper5', {
+      slidesPerView: 3,
+      observer: true,
+      observeParents: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+       breakpoints: {
+    1: {
+      slidesPerView: 1,
+    },
+    680: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }      
+    
+    });
+    
+        
+
+    var d1a = document.getElementById("all_div1");
+    var d2a = document.getElementById("all_div2");
+    var d3a = document.getElementById("all_div3");
+    var d4a = document.getElementById("all_div4");
+    var d5a = document.getElementById("all_div5");  
+    swiper5.on('transitionEnd ', function () {
+        console.log('*** swiper5.realIndex', swiper5.realIndex);
+        if (swiper5.realIndex == 0) {
+          if (d1a.style.display === "none") {
+            d1a.style.display = "block";
+            d2a.style.display = "none";
+            d3a.style.display = "none";
+            d4a.style.display = "none";
+            d5a.style.display = "none";
+          }
+        
+        }
+        if (swiper5.realIndex == 1) {
+          if (d2a.style.display === "none") {
+            d1a.style.display = "none";
+            d2a.style.display = "block";
+            d3a.style.display = "none";
+            d4a.style.display = "none";
+            d5a.style.display = "none";
+          }
+        
+        }
+        if (swiper5.realIndex == 2) {
+          if (d3a.style.display === "none") {
+            d1a.style.display = "none";
+            d2a.style.display = "none";
+            d3a.style.display = "block";
+            d4a.style.display = "none";
+            d5a.style.display = "none";
+          }
+        
+        }
+        if (swiper5.realIndex == 3) {
+          if (d4a.style.display === "none") {
+            d1a.style.display = "none";
+            d2a.style.display = "none";
+            d3a.style.display = "none";
+            d4a.style.display = "block";
+            d5a.style.display = "none";
+          }
+        
+        }
+        if (swiper5.realIndex == 4) {
+          if (d5a.style.display === "none") {
+            d1a.style.display = "none";
+            d2a.style.display = "none";
+            d3a.style.display = "none";
+            d4a.style.display = "none";
+            d5a.style.display = "block";
+          }
+        
+        }        
+    });
+        </script>    
+    
+    </div>
+    <!--__________________________________________________________________________________________________________________-->
+    <script>
+    
+    var div1 = document.getElementById("div1");
+    var div2 = document.getElementById("div2");
+    var div3 = document.getElementById("div3");
+    var div4 = document.getElementById("div4");
+    var div5 = document.getElementById("div5");
+    function junior() {
+      if (div1.style.display === "none") {
+        div1.style.display = "block";
+        div2.style.display = "none";
+        div3.style.display = "none";
+        div4.style.display = "none";
+        div5.style.display = "none";
+      } else {
+        div1.style.display = "none";
+      }
+    }
+    
+    function young() {
+      if (div2.style.display === "none") {
+        div1.style.display = "none";
+        div2.style.display = "block";
+        div3.style.display = "none";
+        div4.style.display = "none";
+        div5.style.display = "none";
+      } else {
+        div2.style.display = "none";
+      }
+    }
+    
+    function master() {
+      if (div3.style.display === "none") {
+        div1.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "block";
+        div4.style.display = "none";
+        div5.style.display = "none";
+      } else {
+        div3.style.display = "none";
+      }
+    }
+    
+    function pro() {
+      if (div4.style.display === "none") {
+        div1.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "none";
+        div4.style.display = "block";
+        div5.style.display = "none";
+      } else {
+        div4.style.display = "none";
+      }
+    }
+    
+    function ALLb() {
+      if (div5.style.display === "none") {
+        div1.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "none";
+        div4.style.display = "none";
+        div5.style.display = "block";
+      } else {
+        div5.style.display = "none";
+      }
+    }    
+
+
+  </script>                
+            </section>
